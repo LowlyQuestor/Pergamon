@@ -29,6 +29,9 @@
   (comp/GET "/playground" [] {:status 200
                               :body (selmer/render-file "playground.html" {})
                               :headers {"Content-Type" "text/html; charset=UTF-8"}})
+  (comp/GET "/about" [] {:status 200
+                         :body (selmer/render-file "about.html" {})
+                         :headers {"Content-Type" "text/html; charset=UTF-8"}})
   (comp/GET "/exhibits" [] {:status 200
                             :body (selmer/render-file "exhibits.html" {})
                             :headers {"Content-Type" "text/html; charset=UTF-8"}})
