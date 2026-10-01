@@ -1,14 +1,14 @@
-# web-dev
+# web-dev (Pergamon backend prototype)
 
-A Clojure library designed to ... well, that part is up to you.
+The Clojure-based backend for Pergamon. It doesn't do a whole lot yet.
 
 ## Usage
 
-FIXME
+For now, start a Clojure repl with something like Leinigen or CIDER to get started.
 
 ## License
 
-Copyright © 2026 FIXME
+Copyright © 2026 Aidan Simon
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
