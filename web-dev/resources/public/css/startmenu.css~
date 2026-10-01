@@ -1,0 +1,38 @@
+[role=menu],
+[role=startmenu] {
+  user-select: none;
+  list-style-type: none;
+  display: flex;
+  white-space: nowrap;
+}
+
+[role=menu] {
+  flex-direction: column;
+}
+
+[role=menu] li,
+[role=startmenu] li {
+  position: relative;
+  text-overflow: ellipsis;
+  cursor: default;
+}
+
+[role=menu] li > ul,
+[role=menu] li > .menu,
+[role=startmenu] li > ul,
+[role=startmenu] li > .menu {
+  position: absolute;
+  /* z-index: 1; */
+  display: none;
+}
+
+[role=menu] li:focus-within > ul,
+[role=menu] li:focus-within > .menu,
+[role=startmenu] li:focus-within > ul,
+[role=startmenu] li:focus-within > .menu {
+  display: block;
+}
+
+.list [role="option"] {
+  user-select: none;
+}

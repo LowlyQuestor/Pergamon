@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+<title>Pergamon Prototype</title>
+<meta content="text/html; charset=utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="/css/cde/theme.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/cde/skins/broica-4.css"/>
+</head>
+<body>
+  <div class="window active" style="max-width: 100%;">
+    <div class="title bar">
+      <div class="title-bar-text">
+	Virtual Exhibitions
+      </div>
+      <!-- <div class="title-bar-buttons"> -->
+      <!-- 	<button data-minimize=""></button> -->
+      <!-- 	<button data-maximize=""></button> -->
+      <!-- 	<button data-close=""></button> -->
+      <!-- </div> -->
+    </div>
+      <div class="window-body">
+	<ul role="menubar">
+	  <li tabindex="0" aria-haspopup="true">
+            <u>F</u>ile
+            <ul role="menu">
+              <li tabindex="0">Save</li>
+              <li tabindex="0">Save As…</li>
+              <li role="separator"></li>
+              <li tabindex="0" aria-haspopup="true">
+		Another Submenu
+		<ul role="menu">
+		  <li tabindex="0">Foo</li>
+		  <li tabindex="0">Baz</li>
+		</ul>
+              </li>
+              <li role="separator"></li>
+              <li tabindex="0">Quit</li>
+            </ul>
+	  </li>
+	  <li tabindex="0" aria-haspopup="true">
+            <u>E</u>dit
+            <ul role="menu">
+              <li data-shortcut="Ctrl+Z" aria-disabled="true">Undo</li>
+              <li role="separator"></li>
+              <li data-shortcut="Ctrl+X" aria-disabled="true">Cut</li>
+              <li tabindex="0" data-shortcut="Ctrl+C">Copy</li>
+              <li tabindex="0" data-shortcut="Ctrl+V">Paste</li>
+            </ul>
+	  </li>
+	  <li tabindex="0" aria-haspopup="true">
+	    <u>V</u>iew
+	    <ul role="menu">
+	      <li aria-disabled="true">Exhibits</li>
+	      <li aria-disabled="true">Playground</li>
+	      <li aria-disabled="true">Weblinks</li>
+	      <li role="separator"></li>
+	      <li aria-disabled="true">Echo Request</li>
+	      <li aria-disabled="true">Greeting</li>
+	    </ul>
+	  </li>
+	  <li tabindex="0" class="help-menu" aria-haspopup="true">
+            Help
+            <ul role="menu">
+              <li tabindex="0">Overview</li>
+              <li role="separator"></li>
+              <li tabindex="0">About</li>
+            </ul>
+	  </li>
+	</ul>
+	<div class="padding">
+	  <div style="text-align: center;"><h2>Current Exhibits:</h2></div>
+	  <p>None yet.</p>
+	</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

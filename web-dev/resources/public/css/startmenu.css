@@ -1,0 +1,64 @@
+[role=menu],
+[role=startmenu] {
+  color: var(--button-fg);
+  background-color: var(--button-bg);
+  border: 1px solid var(--button-light);
+  border-right-color: var(--button-dark);
+  border-bottom-color: var(--button-dark);
+}
+[role=menu] li,
+[role=startmenu] li {
+  border: 1px solid transparent;
+  padding: 1px 3px;
+}
+[role=menu] li:focus,
+[role=startmenu] li:focus {
+  outline: none;
+}
+[role=menu] li:focus-within,
+[role=startmenu] li:focus-within {
+  border: 1px solid var(--button-dark);
+  border-right-color: var(--button-light);
+  border-bottom-color: var(--button-light);
+  background-color: var(--button-active-bg);
+}
+[role=menu] li:focus-within > ul,
+[role=startmenu] li:focus-within > ul {
+  display: block;
+}
+[role=menu] li[aria-disabled],
+[role=startmenu] li[aria-disabled] {
+  color: var(--button-dark);
+  text-shadow: 1px 1px 0 var(--button-light);
+  border-color: transparent;
+  background-color: var(--button-bg);
+}
+
+[role=startmenu] > li > ul {
+  left: 0;
+  bottom: 100%;
+  margin-left: -1px;
+  margin-top: 1px;
+  min-width: 200px;
+}
+
+[role=startmenu] > li.help-menu {
+  margin-left: auto;
+}
+[role=startmenu] > li.help-menu > ul {
+  right: 0;
+  left: auto;
+}
+
+.dialog, [role=menu], [role=startmenu] {
+  --button-bg: var(--dialog-button-bg);
+  --button-fg: var(--dialog-button-fg);
+  --button-active-bg: var(--dialog-button-active-bg);
+  --button-active-fg: var(--dialog-button-active-fg);
+  --button-dark: var(--dialog-button-dark);
+  --button-light: var(--dialog-button-light);
+  --input-bg: var(--dialog-input-bg);
+  --input-fg: var(--dialog-input-fg);
+  --input-dark: var(--dialog-input-dark);
+  --input-light: var(--dialog-input-light);
+}
