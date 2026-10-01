@@ -1,0 +1,8 @@
+* TODO Visual look and feel
+* TODO Editing and Viewing 'Exhibits' (wiki-like)
+* TODO Editing and viewing CtF like challenges
+* TODO Playground code editor
+* TODO Getting the backend systems working and running in playground
+* TODO Getting frontend systems up and running
+* TODO Write some games + other fun stuff
+* TODO Testing
