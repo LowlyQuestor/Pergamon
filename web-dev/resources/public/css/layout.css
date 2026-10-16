@@ -221,3 +221,15 @@ pre {
 .hidden {
     display: none;
 }
+
+.taskbar {
+    position: relative;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.taskbar > #startMenu {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
