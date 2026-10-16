@@ -83,6 +83,8 @@
     </ul>
     <ul role="menubar">
       <button id="start">Start</button>
+      <div id="clock" class="lowered padding" style="margin-left: auto;">
+      </div>
     </ul>
   </footer>
     <script type="text/javascript" src="/javascript/wm.js"></script>
@@ -92,6 +94,15 @@
      button.addEventListener('click', function() {
 	 menu.classList.toggle('hidden');
      });
+
+     function updateClock() {
+	 const clockElement = document.getElementById('clock');
+	 const now = new Date();
+
+	 clockElement.textContent = now.toLocaleTimeString();
+     }
+     updateClock();
+     setInterval(updateClock, 1000);
   </script>
   </body>
 </html>
